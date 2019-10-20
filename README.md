@@ -23,6 +23,8 @@ $ sudo apt-add-repository restricted
 
 # add ROS repository to apt sources
 $ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+
+# make sure you import the new key, or you cannot install ros.(the following comman in line 31.) Check ROS answers for details:'https://answers.ros.org/question/325039/apt-update-fails-cannot-install-pkgs-key-not-working/'
 $ sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 0xB01FA116
 
 # install ROS Base
